@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import './products_manager.dart';
-// import 'package:flutter/rendering.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(MyApp());
   // debugPaintSizeEnabled = true;
+  debugPaintSizeEnabled = true;
 }
 
 class MyApp extends StatelessWidget {
