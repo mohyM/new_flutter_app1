@@ -13,14 +13,21 @@ class Products extends StatelessWidget {
                   children: <Widget>[
                     Image.asset("assets/food.jpg"),
                     Text(element),
-                    ButtonBar(alignment: MainAxisAlignment.center, children: <Widget>[
-                      FlatButton(
-                        
-                        child: Text("Details"),
-                        onPressed: ()=>Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>ProductPage(),),),
+                    ButtonBar(
+                      alignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        FlatButton(
+                          child: Text("Details"),
+                          onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      ProductPage(),
+                                ),
+                              ),
                         )
-                        ],
-                        )
+                      ],
+                    )
                   ],
                 ),
               ))
