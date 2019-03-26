@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import './products_manager.dart';
+import 'pages/home.dart';
 import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(MyApp());
-  debugPaintSizeEnabled = true;
-  debugPaintSizeEnabled = true;
+
+  // debugPaintSizeEnabled = true;
+  // debugPaintSizeEnabled = true;
+
 }
 
 class MyApp extends StatelessWidget {
@@ -17,12 +19,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.deepPurple,
       ),
       debugShowCheckedModeBanner: true,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Easy List"),
-        ),
-        body: ProductManager("food Tester"),
-      ),
+      home: HomePage(),
     );
   }
 }
