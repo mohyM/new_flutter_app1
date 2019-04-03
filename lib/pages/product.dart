@@ -1,19 +1,28 @@
 import 'package:flutter/material.dart';
 
 class ProductPage extends StatelessWidget {
+
+  final String title ; 
+  final String imageUrl;
+  ProductPage(this.title , this.imageUrl);
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Product Details"),
+        title: Text(this.title),
       ),
       body: Center(
         child: Column(
           children: <Widget>[
-            Text("product Details"),
+            Image.asset(this.imageUrl),
+            Container(padding: EdgeInsets.all(10),
+             child: Text(this.title)),
             RaisedButton(
-              child: Text("Back"),
-              onPressed: () => Navigator.pop(context),
+              color: Theme.of(context).accentColor,
+              child: Text("Delete"),
+              onPressed: () => Navigator.pop(context , true),
             )
           ],
         ),

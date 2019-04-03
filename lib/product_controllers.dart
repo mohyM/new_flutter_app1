@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class ProductControl extends StatelessWidget {
   final Function addProducts;
+  final Map<String,String> pro = {"title" : "sweets" , "image" : "assets/food.jpg"};
 
   ProductControl(this.addProducts);
 
@@ -12,7 +13,7 @@ class ProductControl extends StatelessWidget {
       textColor: Colors.white,
       child: Text("add products"),
       onPressed: () {
-        addProducts("sweets");
+        addProducts(pro);
       },
     );
   }
