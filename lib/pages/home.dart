@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Easy List"),
       ),
-      body: ProductManager("food Tester"),
+      body: ProductManager(),
     );
   }
 }
